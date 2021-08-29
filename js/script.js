@@ -6,7 +6,7 @@ const getInput = () =>{
 }
 
 const loadApi =async (city) => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f5fda5e3830fab9f563d83c02fb262e5&units=metric`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=f5fda5e3830fab9f563d83c02fb262e5&units=metric`
     const res = await fetch(url);
     const data =await res.json();
     showData(data)
